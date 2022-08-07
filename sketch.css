@@ -1,0 +1,8 @@
+.vertcontainer {
+    display: flex;
+}
+
+.horiz {
+    height: 100px;
+    flex: 1;
+}
