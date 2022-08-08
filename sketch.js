@@ -29,8 +29,12 @@ function initializeGrid(squares) {
     const divs = document.getElementsByClassName("horiz");
  
     for (let i = 0; i < divs.length; i++) {
+        let r = Math.floor(Math.random() * 256);
+        let g = Math.floor(Math.random() * 256);
+        let b = Math.floor(Math.random() * 256);
+
         divs.item(i).addEventListener('mouseover', () => {divs.item(i).style.backgroundColor = 
-        'black';})
+        'rgb(' + r + ',' + g + ',' + b + ')';})
         divs.item(i).style.height = screen.height/(1.25*squares) + "px"; 
     }
 
