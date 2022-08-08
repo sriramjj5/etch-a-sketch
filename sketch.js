@@ -9,8 +9,8 @@ function buttonPress() {
 
 function initializeGrid(squares) {
 
-    if (parent.firstChild) {
-        myNode.removeChild(parent.firstChild);
+    while (parent.firstChild) {
+        parent.removeChild(parent.firstChild);
     }
 
     for (let i = 0; i<squares; i++) {
